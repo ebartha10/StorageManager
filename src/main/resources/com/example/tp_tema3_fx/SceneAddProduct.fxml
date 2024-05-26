@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<Pane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="370.0" stylesheets="@css/SceneAddProduct.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp_tema3_fx.ui.SceneAddProductController">
+   <children>
+      <Pane id="productBackground" layoutX="5.0" layoutY="48.0" prefHeight="193.0" prefWidth="363.0">
+         <children>
+            <Label id="labelName" layoutX="16.0" layoutY="9.0" text="Name:" />
+            <TextField id="textName" fx:id="textFieldName" layoutX="71.0" layoutY="5.0" prefHeight="28.0" prefWidth="286.0" promptText="Enter name...">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="14.5" offsetY="3.0" radius="6.625" width="14.0">
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect></TextField>
+            <Label id="labelName" layoutX="16.0" layoutY="54.0" text="Qty." />
+            <TextField id="textName" fx:id="textFieldQuantity" layoutX="71.0" layoutY="50.0" prefHeight="28.0" prefWidth="286.0" promptText="Enter quantity...">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="14.5" offsetY="3.0" radius="6.625" width="14.0">
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <Label id="labelName" layoutX="19.0" layoutY="97.0" text="Price:" />
+            <TextField id="textName" fx:id="textFieldPrice" layoutX="71.0" layoutY="93.0" prefHeight="28.0" prefWidth="286.0" promptText="Enter price...">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="14.5" offsetY="3.0" radius="6.625" width="14.0">
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+         </children></Pane>
+      <HBox alignment="BOTTOM_LEFT" layoutX="5.0" layoutY="7.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="363.0">
+         <children>
+            <Button id="buttonProduct" alignment="BOTTOM_CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="19.0" prefWidth="128.0" text="Add Product" />
+            <Separator opacity="0.0" HBox.hgrow="ALWAYS" />
+            <Button id="buttonAdd" fx:id="buttonConfirm" mnemonicParsing="false" onMouseClicked="#onAddButtonClick" prefHeight="20.0" prefWidth="60.0" text="Confirm" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></Button>
+            <Button id="buttonRemove" fx:id="buttonClose" mnemonicParsing="false" onMouseClicked="#onCloseButtonClick" prefHeight="20.0" prefWidth="60.0" text="Cancel" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+</Pane>

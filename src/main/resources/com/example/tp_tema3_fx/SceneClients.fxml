@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<Pane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" stylesheets="@css/SceneClients.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp_tema3_fx.ui.SceneClientsController">
+   <children>
+      <Pane id="productBackground" layoutX="5.0" layoutY="50.0" prefHeight="431.0" prefWidth="631.0">
+         <children>
+            <ScrollPane fx:id="scrollPane" fitToWidth="true" hbarPolicy="NEVER" layoutX="-8.0" layoutY="7.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="431.0" prefWidth="640.0" style="-fx-background-color: transparent; -fx-padding: 10 0 10 0;" vbarPolicy="NEVER">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="404.0" prefWidth="628.0" />
+              </content>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" />
+               </padding>
+            </ScrollPane>
+         </children></Pane>
+      <HBox alignment="CENTER_LEFT" layoutX="5.0" layoutY="7.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="631.0">
+         <children>
+            <Button id="buttonProduct" fx:id="buttonProducts" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#onProductButtonClick" onMouseEntered="#onProductButtonEnter" onMouseExited="#onProductButtonExit" prefHeight="40.0" prefWidth="114.0" text="Products" />
+            <Button id="buttonClient" fx:id="buttonClients" mnemonicParsing="false" onMouseEntered="#onClientsButtonEnter" onMouseExited="#onClientsButtonExit" prefHeight="40.0" prefWidth="95.0" text="Clients" />
+            <Button id="buttonOrder" fx:id="buttonOrders" mnemonicParsing="false" onMouseClicked="#onOrdersButtonClick" onMouseEntered="#onOrdersButtonEnter" onMouseExited="#onOrdersButtonExit" prefHeight="40.0" prefWidth="95.0" text="Orders" />
+            <TextField id="searchBox" fx:id="textField" onKeyPressed="#onKeyPressedSearchBox" onMouseEntered="#onSearchBoxEnter" onMouseExited="#onSearchBoxExit" prefHeight="27.0" prefWidth="228.0" promptText="Search client...">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" offsetY="2.0">
+                     <color>
+                        <Color opacity="0.75" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <Button id="buttonAdd" fx:id="buttonAdd" layoutX="556.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#onAddButtonClick" prefHeight="40.0" prefWidth="40.0" text="+" />
+      <Button id="buttonRemove" fx:id="buttonRemove" onMouseClicked="#onRemoveButtonClicked" layoutX="596.0" layoutY="9.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="-" />
+   </children>
+</Pane>

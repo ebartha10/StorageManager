@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<Pane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="370.0" stylesheets="@css/SceneChooseProduct.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp_tema3_fx.ui.SceneChooseProductController">
+   <children>
+      <Pane id="productBackground" layoutX="5.0" layoutY="48.0" prefHeight="193.0" prefWidth="363.0">
+         <children>
+            <SplitMenuButton id="spinnerProducts" fx:id="splitMenu" onMouseEntered="#spinnerOnMouseEntered" onMouseExited="#spinnerOnMouseExit" contentDisplay="CENTER" layoutX="72.0" layoutY="7.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="286.0" text="Choose product..." textOverrun="CLIP">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="50.0" offsetY="5.0" radius="24.5" width="50.0">
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </SplitMenuButton>
+            <Label id="labelName" layoutX="11.0" layoutY="15.0" text="Product:" />
+            <Label id="labelName" layoutX="11.0" layoutY="136.0" text="Quantity:" />
+            <TextField id="textName" fx:id="textField" layoutX="77.0" layoutY="132.0" prefHeight="28.0" prefWidth="286.0" promptText="Enter Quantity...">
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="14.5" offsetY="3.0" radius="6.625" width="14.0">
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+         </children></Pane>
+      <HBox alignment="BOTTOM_LEFT" layoutX="5.0" layoutY="7.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="363.0">
+         <children>
+            <Button id="buttonProduct" alignment="BOTTOM_CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="19.0" prefWidth="128.0" text="Add Client" />
+            <Separator opacity="0.0" HBox.hgrow="ALWAYS" />
+            <Button id="buttonAdd" fx:id="buttonConfirm" mnemonicParsing="false" onMouseClicked="#onCofirmButtonClick" prefHeight="20.0" prefWidth="60.0" text="Confirm" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></Button>
+            <Button id="buttonRemove" fx:id="buttonClose" mnemonicParsing="false" onMouseClicked="#onCloseButtonClick" prefHeight="20.0" prefWidth="60.0" text="Cancel" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+</Pane>

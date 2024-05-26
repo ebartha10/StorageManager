@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<VBox id="background" alignment="CENTER" prefHeight="480.0" prefWidth="640.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp_tema3_fx.ui.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label id="title" fx:id="welcomeText" text="Welcome" textOverrun="CENTER_ELLIPSIS">
+      <effect>
+         <DropShadow offsetY="5.0">
+            <color>
+               <Color opacity="0.46000000834465027" />
+            </color>
+         </DropShadow>
+      </effect></Label>
+   <TextField id="emailBox" fx:id="emailText" onMouseEntered="#emailBoxOnMouseEntered" onMouseExited="#emailBoxOnMouseExit" prefHeight="45.0" prefWidth="604.0" promptText="Enter email...">
+      <effect>
+         <DropShadow offsetY="5.0">
+            <color>
+               <Color opacity="0.4584527313709259" />
+            </color></DropShadow>
+      </effect>
+   </TextField>
+   <TextField id="passwordBox" fx:id="passwordBox" onMouseEntered="#passwordBoxOnMouseEntered" onMouseExited="#passwordBoxOnMouseExit" prefHeight="45.0" prefWidth="600.0" promptText="Enter password">
+      <effect>
+         <DropShadow offsetY="5.0">
+            <color>
+               <Color opacity="0.4584527313709259" />
+            </color>
+         </DropShadow>
+      </effect></TextField>
+    <Button id="helloButton" text="Log-in">
+      <effect>
+         <DropShadow offsetY="5.0">
+            <color>
+               <Color opacity="0.46000000834465027" />
+            </color>
+         </DropShadow>
+      </effect></Button>
+</VBox>

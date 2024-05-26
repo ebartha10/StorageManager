@@ -1,0 +1,60 @@
+#background{
+    -fx-background-color: #D3E1FF;
+}
+.scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+#productBackground{
+    -fx-background-color: rgba(111, 108, 217, 75);
+    -fx-background-radius: 0 0 20px 20px;
+}
+#buttonProduct{
+    -fx-background-color: rgba(111, 108, 217, 75);
+    -fx-background-radius: 20px 20px 0px 0;
+    -fx-text-fill: #F4F7FA;
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+#buttonAdd{
+    -fx-background-color: #23E9B4;
+    -fx-background-radius: 20px 0 0 0;
+    -fx-text-fill: #F4F7FA;
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-weight: bold;
+    -fx-font-size: 10px;
+}
+#buttonRemove{
+    -fx-background-color: #FF5A5A;
+    -fx-background-radius: 0 20px 0 0;
+    -fx-text-fill: #F4F7FA;
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-weight: bold;
+    -fx-font-size: 10px;
+}
+#buttonAdd:hover{
+    -fx-background-color: rgba(35, 233, 180, .5);
+}
+#buttonAdd:pressed{
+    -fx-background-color: #178367;
+}
+#buttonRemove:hover{
+    -fx-background-color: rgba(255, 90, 90, .5);
+}
+#buttonRemove:pressed{
+    -fx-background-color: #772b2b;
+}
+#labelName{
+    -fx-font-size: 14;
+    -fx-font-family: Monserrat Bold;
+    -fx-font-weight: Bold;
+    -fx-text-fill: #F4F7FA;
+}
+#textName{
+    -fx-background-color: #91D7E0;
+    -fx-background-radius: 20;
+    -fx-padding: 5 20 5 20;
+    -fx-font-family: Monserrat Bold;
+    -fx-text-fill: #F4F7FA;
+    -fx-prompt-text-fill: #F4F7FA;
+}

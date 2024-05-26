@@ -1,0 +1,107 @@
+#background{
+    -fx-background-color: #D3E1FF;
+}
+.scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+#productBackground{
+    -fx-background-color: rgba(111, 108, 217, 75);
+    -fx-background-radius: 0 0 20px 20px;
+}
+#buttonProduct{
+    -fx-background-color: rgba(111, 108, 217, 75);
+    -fx-background-radius: 20px 0 0 0;
+    -fx-text-fill: #F4F7FA;
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+#buttonProduct:hover{
+    -fx-background-color: rgba(111, 108, 217, 100);
+}
+#buttonClient:hover{
+    -fx-background-color: rgba(111, 108, 217, 100);
+    -fx-text-fill: #F4F7FA;
+
+}
+#buttonOrder:hover{
+    -fx-background-color: rgba(111, 108, 217, 100);
+    -fx-text-fill: #F4F7FA
+}
+#buttonClient{
+    -fx-background-color: #DED2F9;
+    -fx-text-fill: #656F77;
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+#buttonOrder{
+    -fx-background-color: #DED2F9;
+    -fx-text-fill: #656F77;
+    -fx-background-radius: 0 20px 0 0;
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+#searchBox{
+    -fx-background-color: #23E9B4;
+    -fx-text-fill: #F4F7FA;
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-weight: bold;
+    -fx-background-radius: 50 50 50 50;
+    -fx-prompt-text-fill: #F4F7FA;
+    -fx-background-image: url('../drawable/magnifyingGlass.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right;
+}
+#buttonAdd{
+    -fx-background-color: rgba(111, 108, 217, 75);
+    -fx-background-radius: 20px 0 0 0;
+    -fx-text-fill: #F4F7FA;
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+#buttonRemove{
+    -fx-background-color: rgba(111, 108, 217, 75);
+    -fx-background-radius: 0 20px 0 0;
+    -fx-text-fill: #F4F7FA;
+    -fx-font-family: "Montserrat Bold";
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+#buttonAdd:hover{
+    -fx-background-color: #23E9B4;
+}
+#buttonAdd:pressed{
+    -fx-background-color: #178367;
+}
+#buttonRemove:hover{
+    -fx-background-color: #FF5A5A;
+}
+#buttonRemove:pressed{
+    -fx-background-color: #772b2b;
+}
+#header{
+    -fx-background-color: #23E9B4;
+    -fx-background-radius: 50px;
+    -fx-padding: 5 20 5 20;
+}
+#headerNameLabel{
+    -fx-font-size: 18;
+    -fx-font-family: Monserrat Bold;
+    -fx-font-weight: Bold;
+    -fx-text-fill: #F4F7FA;
+}
+#headerPriceLabel{
+    -fx-font-size: 18;
+    -fx-font-family: Monserrat Bold;
+    -fx-font-weight: Bold;
+    -fx-text-fill: #F4F7FA;
+}
+#headerQuantityLabel{
+    -fx-font-size: 18;
+    -fx-font-family: Monserrat Bold;
+    -fx-font-weight: Bold;
+    -fx-text-fill: #F4F7FA;
+}
